@@ -1,0 +1,15 @@
+[
+  "hour",
+  "day_of_week",
+  "month",
+  "known_daily_mean",
+  "known_daily_min",
+  "known_daily_max",
+  "known_daily_std",
+  "load_forecast_mw",
+  "solar_forecast_mw",
+  "wind_forecast_mw",
+  "residual_load_mw",
+  "renewable_share",
+  "wind_load_ratio"
+]
