@@ -8,6 +8,7 @@ from src.api.forecasting import ForecastInput, predict_price
 from src.forecasting.ai_explainer import generate_market_explanation
 from src.forecasting.intelligence import analyze_forecast
 from src.forecasting.pipeline import forecast_day
+from src.api.backtest import router as backtest_router
 
 app = FastAPI(
     title="EU Market Monitor API",
@@ -23,6 +24,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(backtest_router)
 
 class ForecastResponse(BaseModel):
     predicted_price_eur_mwh: float
